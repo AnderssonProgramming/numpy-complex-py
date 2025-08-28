@@ -5,7 +5,7 @@ This module provides advanced operations for complex matrices and vectors using 
 Implements eigenvalue/eigenvector computation, matrix property verification 
 (unitary, Hermitian), and tensor product operations.
 
-Author: Anderson Programming
+Author: Andersson Programming
 Date: August 2025
 """
 

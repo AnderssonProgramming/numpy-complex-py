@@ -5,7 +5,7 @@ This module contains tests for the AdvancedComplexOperations class.
 Tests cover eigenvalue computations, matrix property verification,
 and tensor product operations.
 
-Author: Anderson Programming
+Author: Andersson Programming
 Date: August 2025
 """
 

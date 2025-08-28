@@ -145,7 +145,7 @@ This project is licensed under the GPL-3.0 license License - see the [LICENSE](L
 
 ## Authors
 
-* **Anderson Programming** - *Initial implementation* - [AnderssonProgramming](https://github.com/AnderssonProgramming)
+* **Andersson Programming** - *Initial implementation* - [AnderssonProgramming](https://github.com/AnderssonProgramming)
 
 ## Acknowledgments
 

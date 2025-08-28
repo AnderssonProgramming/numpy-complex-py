@@ -5,7 +5,7 @@ This module provides fundamental operations for complex vectors using NumPy.
 Implements vector addition, scalar multiplication, additive inverse, inner product,
 norm calculations, and distance measurements between complex vectors.
 
-Author: Anderson Programming
+Author: Andersson Programming
 Date: August 2025
 """
 

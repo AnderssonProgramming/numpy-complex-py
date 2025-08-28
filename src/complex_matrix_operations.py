@@ -5,7 +5,7 @@ This module provides fundamental operations for complex matrices using NumPy.
 Implements matrix addition, scalar multiplication, additive inverse, transpose,
 conjugate, adjoint operations, and matrix-vector multiplication.
 
-Author: Anderson Programming
+Author: Andersson Programming
 Date: August 2025
 """
 

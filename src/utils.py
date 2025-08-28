@@ -4,7 +4,7 @@ Utility Functions and Constants Module
 This module provides common utility functions, error messages, and constants
 used across the complex numbers linear algebra package.
 
-Author: Anderson Programming
+Author: Andersson Programming
 Date: August 2025
 """
 

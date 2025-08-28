@@ -5,7 +5,7 @@ This module contains comprehensive tests for the ComplexVectorOperations class.
 Tests cover all vector operations including addition, scalar multiplication,
 inner products, norms, and distance calculations.
 
-Author: Anderson Programming
+Author: Andersson Programming
 Date: August 2025
 """
 

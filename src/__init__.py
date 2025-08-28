@@ -6,4 +6,4 @@ with complex numbers using NumPy.
 """
 
 __version__ = "1.0.0"
-__author__ = "Anderson Programming"
+__author__ = "Andersson Programming"

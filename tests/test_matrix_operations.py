@@ -5,7 +5,7 @@ This module contains comprehensive tests for the ComplexMatrixOperations class.
 Tests cover matrix operations including addition, scalar multiplication,
 transpose, conjugate, adjoint, and matrix multiplication.
 
-Author: Anderson Programming  
+Author: Andersson Programming  
 Date: August 2025
 """
 
