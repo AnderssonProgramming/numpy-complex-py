@@ -1,87 +1,154 @@
-# Project Title
+# Complex Numbers Linear Algebra with NumPy
 
-One Paragraph of project description goes here
+A comprehensive Python library for performing linear algebra operations with complex numbers using NumPy. This project implements fundamental operations on complex vectors and matrices, including vector operations, matrix manipulations, and advanced linear algebra computations.
 
-## Getting Started
+## Features
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- **Vector Operations**: Addition, scalar multiplication, additive inverse, inner product, norm, and distance calculations
+- **Matrix Operations**: Addition, scalar multiplication, additive inverse, transpose, conjugate, and adjoint operations
+- **Advanced Operations**: Matrix multiplication, matrix-vector action, eigenvalue/eigenvector computation
+- **Matrix Properties**: Unitarity and Hermitian property verification
+- **Tensor Operations**: Tensor product calculations between matrices and vectors
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
+## Project Structure
 
 ```
-Give the example
+numpy-complex-py/
+├── src/
+│   ├── complex_vector_operations.py    # Complex vector operations
+│   ├── complex_matrix_operations.py    # Complex matrix operations
+│   ├── advanced_operations.py          # Advanced linear algebra operations
+│   └── utils.py                        # Utility functions
+├── notebooks/
+│   ├── 01_vector_operations.ipynb      # Vector operations examples
+│   ├── 02_matrix_operations.ipynb      # Matrix operations examples
+│   ├── 03_advanced_operations.ipynb    # Advanced operations examples
+│   └── 04_comprehensive_examples.ipynb # Complete usage examples
+├── tests/
+│   ├── test_vector_operations.py       # Vector operations tests
+│   ├── test_matrix_operations.py       # Matrix operations tests
+│   └── test_advanced_operations.py     # Advanced operations tests
+└── requirements.txt                    # Project dependencies
 ```
 
-And repeat
+## Prerequisites
 
-```
-until finished
-```
+- Python 3.7 or higher
+- NumPy
+- Jupyter Notebook (for running examples)
+- pytest (for running tests)
 
-End with an example of getting some data out of the system or using it for a little demo
+## Installation
 
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
+1. Clone the repository:
+```bash
+git clone https://github.com/AnderssonProgramming/numpy-complex-py.git
+cd numpy-complex-py
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
 ```
 
-## Deployment
+3. Install the package in development mode:
+```bash
+pip install -e .
+```
 
-Add additional notes about how to deploy this on a live system
+## Usage
+
+### Quick Start
+
+```python
+import numpy as np
+from src.complex_vector_operations import ComplexVectorOperations
+from src.complex_matrix_operations import ComplexMatrixOperations
+
+# Create complex vectors
+v1 = np.array([1+2j, 3-1j, 2+3j])
+v2 = np.array([2-1j, 1+1j, 1-2j])
+
+# Vector operations
+ops = ComplexVectorOperations()
+result = ops.add_vectors(v1, v2)
+norm = ops.vector_norm(v1)
+
+# Matrix operations
+A = np.array([[1+1j, 2-1j], [0+2j, 1-1j]])
+B = np.array([[2+0j, 1+1j], [1-1j, 3+0j]])
+
+matrix_ops = ComplexMatrixOperations()
+sum_matrix = matrix_ops.add_matrices(A, B)
+conjugate = matrix_ops.conjugate_matrix(A)
+```
+
+## Running the Examples
+
+Open and run the Jupyter notebooks in the `notebooks/` directory:
+
+```bash
+jupyter notebook notebooks/
+```
+
+## Running Tests
+
+Execute the test suite:
+
+```bash
+pytest tests/ -v
+```
+
+## Operations Implemented
+
+### Vector Operations
+- Complex vector addition
+- Additive inverse of complex vectors
+- Scalar multiplication with complex vectors
+- Inner product of complex vectors
+- Vector norm calculation
+- Distance between vectors
+
+### Matrix Operations
+- Complex matrix addition
+- Additive inverse of complex matrices
+- Scalar multiplication with complex matrices
+- Matrix transpose
+- Matrix conjugate
+- Matrix adjoint (Hermitian transpose)
+
+### Advanced Operations
+- Matrix multiplication
+- Matrix-vector action
+- Eigenvalues and eigenvectors computation
+- Unitarity verification
+- Hermitian property verification
+- Tensor product operations
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+* [NumPy](https://numpy.org/) - Fundamental package for scientific computing
+* [Jupyter](https://jupyter.org/) - Interactive computing environment
+* [pytest](https://pytest.org/) - Testing framework
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-operation`)
+3. Commit your changes (`git commit -am 'feat: add new matrix operation'`)
+4. Push to the branch (`git push origin feature/new-operation`)
+5. Create a Pull Request
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Authors
+
+* **Anderson Programming** - *Initial implementation* - [AnderssonProgramming](https://github.com/AnderssonProgramming)
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* NumPy development team for the excellent mathematical computing library
+* Linear algebra mathematical foundations
+* Educational resources on complex number operations
