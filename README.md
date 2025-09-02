@@ -1,154 +1,138 @@
-# Complex Numbers Linear Algebra with NumPy
+# NumPy Complex Linear Algebra Workshops
 
-A comprehensive Python library for performing linear algebra operations with complex numbers using NumPy. This project implements fundamental operations on complex vectors and matrices, including vector operations, matrix manipulations, and advanced linear algebra computations.
+Educational project implementing complex linear algebra operations through interactive Jupyter notebooks that solve specific workshop assignments.
 
-## Features
+## Overview
 
-- **Vector Operations**: Addition, scalar multiplication, additive inverse, inner product, norm, and distance calculations
-- **Matrix Operations**: Addition, scalar multiplication, additive inverse, transpose, conjugate, and adjoint operations
-- **Advanced Operations**: Matrix multiplication, matrix-vector action, eigenvalue/eigenvector computation
-- **Matrix Properties**: Unitarity and Hermitian property verification
-- **Tensor Operations**: Tensor product calculations between matrices and vectors
+This project provides complete solutions to 4 workshops focusing on complex linear algebra using NumPy. Each notebook implements the exact requirements specified in the `tasks/` folder, progressing from basic complex number operations to advanced quantum computing applications.
+
+## Workshop Solutions
+
+### Workshop 1: Complex Number Fundamentals
+**File**: `Taller1_ComplexIntro.ipynb`  
+**Tasks**: `tasks/Taller Espacios Vectoriales Complejos.pdf`
+
+Complete introduction to complex numbers including:
+- Cartesian and polar representation
+- Basic operations and complex arithmetic  
+- Modulus and phase calculations
+- Complex conjugates and properties
+
+### Workshop 2: Vector and Matrix Operations
+**File**: `Taller2_Vector_Matrix_Operations.ipynb`  
+**Tasks**: `tasks/Taller Espacios Vectoriales Complejos 2.pdf`
+
+Advanced vector and matrix manipulations:
+- Complex column vector creation and operations
+- Matrix addition, scalar multiplication
+- Matrix-vector products and transformations
+- Complex matrix conjugates and transposes
+
+### Workshop 3: Vector Spaces and Eigenvalues  
+**File**: `Taller3_Inner_Products_Eigenvalues.ipynb`  
+**Tasks**: `tasks/Taller Espacios Vectoriales Complejos 3.pdf`
+
+Inner product spaces and spectral analysis:
+- Complex inner products and norms
+- Eigenvalue and eigenvector computation
+- Distance and angle calculations in complex spaces
+- Orthogonality and normalization
+
+### Workshop 4: Advanced Matrix Theory
+**File**: `Taller4_Hermitian_Unitary_Tensor.ipynb`  
+**Tasks**: `tasks/Taller Espacios Vectoriales Complejos 4.pdf`
+
+Specialized matrices and quantum applications:
+- Hermitian matrix analysis and properties
+- Unitary matrices and transformations
+- Tensor products and composite systems  
+- Quantum state evolution and measurements
 
 ## Project Structure
 
 ```
 numpy-complex-py/
-├── src/
-│   ├── complex_vector_operations.py    # Complex vector operations
-│   ├── complex_matrix_operations.py    # Complex matrix operations
-│   ├── advanced_operations.py          # Advanced linear algebra operations
-│   └── utils.py                        # Utility functions
-├── notebooks/
-│   ├── 01_vector_operations.ipynb      # Vector operations examples
-│   ├── 02_matrix_operations.ipynb      # Matrix operations examples
-│   ├── 03_advanced_operations.ipynb    # Advanced operations examples
-│   └── 04_comprehensive_examples.ipynb # Complete usage examples
-├── tests/
-│   ├── test_vector_operations.py       # Vector operations tests
-│   ├── test_matrix_operations.py       # Matrix operations tests
-│   └── test_advanced_operations.py     # Advanced operations tests
-└── requirements.txt                    # Project dependencies
+├── Taller1_ComplexIntro.ipynb           # Workshop 1 solution
+├── Taller2_Vector_Matrix_Operations.ipynb  # Workshop 2 solution
+├── Taller3_Inner_Products_Eigenvalues.ipynb # Workshop 3 solution  
+├── Taller4_Hermitian_Unitary_Tensor.ipynb  # Workshop 4 solution
+├── tasks/                               # Original workshop assignments
+│   ├── Taller Espacios Vectoriales Complejos.pdf
+│   ├── Taller Espacios Vectoriales Complejos 2.pdf
+│   ├── Taller Espacios Vectoriales Complejos 3.pdf
+│   └── Taller Espacios Vectoriales Complejos 4.pdf
+├── requirements.txt                     # Python dependencies
+├── README.md                           # This file
+└── LICENSE                            # MIT License
 ```
 
-## Prerequisites
-
-- Python 3.7 or higher
-- NumPy
-- Jupyter Notebook (for running examples)
-- pytest (for running tests)
-
-## Installation
+## Installation and Usage
 
 1. Clone the repository:
-```bash
-git clone https://github.com/AnderssonProgramming/numpy-complex-py.git
-cd numpy-complex-py
-```
+   ```bash
+   git clone https://github.com/yourusername/numpy-complex-py.git
+   cd numpy-complex-py
+   ```
 
 2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-3. Install the package in development mode:
-```bash
-pip install -e .
-```
+3. Launch Jupyter and open any workshop notebook:
+   ```bash
+   jupyter notebook
+   ```
 
-## Usage
+## Requirements
 
-### Quick Start
+- Python 3.8+
+- NumPy 1.21+
+- Jupyter Notebook
+- Matplotlib (for visualizations)
 
-```python
-import numpy as np
-from src.complex_vector_operations import ComplexVectorOperations
-from src.complex_matrix_operations import ComplexMatrixOperations
+## Educational Value
 
-# Create complex vectors
-v1 = np.array([1+2j, 3-1j, 2+3j])
-v2 = np.array([2-1j, 1+1j, 1-2j])
+Each notebook follows the exact requirements from the corresponding PDF assignment in the `tasks/` folder. Solutions include:
 
-# Vector operations
-ops = ComplexVectorOperations()
-result = ops.add_vectors(v1, v2)
-norm = ops.vector_norm(v1)
+- **Detailed explanations** of complex linear algebra concepts
+- **Step-by-step implementations** using NumPy
+- **Mathematical verification** of results
+- **Practical examples** and test cases
+- **Visual representations** where applicable
 
-# Matrix operations
-A = np.array([[1+1j, 2-1j], [0+2j, 1-1j]])
-B = np.array([[2+0j, 1+1j], [1-1j, 3+0j]])
+## Topics Covered
 
-matrix_ops = ComplexMatrixOperations()
-sum_matrix = matrix_ops.add_matrices(A, B)
-conjugate = matrix_ops.conjugate_matrix(A)
-```
+### Complex Number Operations
+- Complex arithmetic and properties
+- Cartesian ↔ Polar conversions
+- Modulus and argument calculations
 
-## Running the Examples
+### Vector Spaces
+- Complex vector operations
+- Inner products and norms
+- Orthogonality and projections
 
-Open and run the Jupyter notebooks in the `notebooks/` directory:
+### Matrix Theory
+- Complex matrix operations
+- Eigenvalue decomposition
+- Hermitian and unitary matrices
+- Tensor products
 
-```bash
-jupyter notebook notebooks/
-```
-
-## Running Tests
-
-Execute the test suite:
-
-```bash
-pytest tests/ -v
-```
-
-## Operations Implemented
-
-### Vector Operations
-- Complex vector addition
-- Additive inverse of complex vectors
-- Scalar multiplication with complex vectors
-- Inner product of complex vectors
-- Vector norm calculation
-- Distance between vectors
-
-### Matrix Operations
-- Complex matrix addition
-- Additive inverse of complex matrices
-- Scalar multiplication with complex matrices
-- Matrix transpose
-- Matrix conjugate
-- Matrix adjoint (Hermitian transpose)
-
-### Advanced Operations
-- Matrix multiplication
-- Matrix-vector action
-- Eigenvalues and eigenvectors computation
-- Unitarity verification
-- Hermitian property verification
-- Tensor product operations
-
-## Built With
-
-* [NumPy](https://numpy.org/) - Fundamental package for scientific computing
-* [Jupyter](https://jupyter.org/) - Interactive computing environment
-* [pytest](https://pytest.org/) - Testing framework
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-operation`)
-3. Commit your changes (`git commit -am 'feat: add new matrix operation'`)
-4. Push to the branch (`git push origin feature/new-operation`)
-5. Create a Pull Request
+### Quantum Applications
+- State vector representation
+- Unitary evolution
+- Measurement operators
+- Composite quantum systems
 
 ## License
 
-This project is licensed under the GPL-3.0 license License - see the [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](LICENSE) file for details.
 
-## Authors
+## Contributing
 
-* **Andersson Programming** - *Initial implementation* - [AnderssonProgramming](https://github.com/AnderssonProgramming)
+This project contains educational workshop solutions. For improvements or corrections, please open an issue or submit a pull request.
 
-## Acknowledgments
+---
 
-* NumPy development team for the excellent mathematical computing library
-* Linear algebra mathematical foundations
-* Educational resources on complex number operations
+*Educational project implementing complex linear algebra workshops using NumPy and Jupyter.*
