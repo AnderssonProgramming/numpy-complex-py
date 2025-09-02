@@ -70,7 +70,7 @@ numpy-complex-py/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/numpy-complex-py.git
+   git clone https://github.com/AnderssonProgramming/numpy-complex-py.git
    cd numpy-complex-py
    ```
 
