@@ -63,7 +63,7 @@ numpy-complex-py/
 │   └── Taller Espacios Vectoriales Complejos 4.pdf
 ├── requirements.txt                     # Python dependencies
 ├── README.md                           # This file
-└── LICENSE                            # MIT License
+└── LICENSE                            # GPL-3.0 License
 ```
 
 ## Installation and Usage
@@ -91,17 +91,29 @@ numpy-complex-py/
 - Jupyter Notebook
 - Matplotlib (for visualizations)
 
-## Educational Value
+## Contributing
 
-Each notebook follows the exact requirements from the corresponding PDF assignment in the `tasks/` folder. Solutions include:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'feat: add some amazing feature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-- **Detailed explanations** of complex linear algebra concepts
-- **Step-by-step implementations** using NumPy
-- **Mathematical verification** of results
-- **Practical examples** and test cases
-- **Visual representations** where applicable
+Please use conventional commit messages (feat, fix, docs, test, chore, etc.).
 
-## Topics Covered
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/AnderssonProgramming/numpy-complex-py/tags).
+
+## Authors
+
+- **Andersson Programming** - *Initial work* - [AnderssonProgramming](https://github.com/AnderssonProgramming)
+
+## License
+
+GPL-3.0 License - see [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
 
 ### Complex Number Operations
 - Complex arithmetic and properties
@@ -124,15 +136,3 @@ Each notebook follows the exact requirements from the corresponding PDF assignme
 - Unitary evolution
 - Measurement operators
 - Composite quantum systems
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
-## Contributing
-
-This project contains educational workshop solutions. For improvements or corrections, please open an issue or submit a pull request.
-
----
-
-*Educational project implementing complex linear algebra workshops using NumPy and Jupyter.*
